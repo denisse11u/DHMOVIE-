@@ -5,28 +5,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seccion De Películas</title>
 </head>
+
 <style>
-    .nav-home{
-        height: fit-content;
-        position: fixed;
+    #seccion-tendencia, 
+    #seccion-pop {
+        display: flex;     
+        gap: 10px;           
+        flex-wrap: wrap;    
     }
+
+    body{
+        background: rgb(28, 28, 29);
+    }
+    #nav-home ul {
+    display: flex;
+    gap: 10px;      
+    list-style: none; 
+    padding: 0;      
+    margin: 0;
+    }
+
+    #nav-home li {
+        color: white;  
+        cursor: pointer;  
+    }
+    h3{
+        color: azure;
+    }
+    .nav-home{
+        display: flex;
+        gap: 30px;      
+        list-style: none; 
+        padding: 0;      
+        margin: 0;
+        height: 20%;
+    }
+
+    .modulo {
+    width: 150px;   
+     align-items: center;    
+    height: 200px;      
+    border-radius: 10px;
+    }
+
+    .modulo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;  
+    }
+
+
 </style>
+
 <body>
-    <header>
+    <header class="nav-home">
         <img 
         height="50"
-        src="https://images.ctfassets.net/4cd45et68cgf/4nBnsuPq03diC5eHXnQYx/d48a4664cdc48b6065b0be2d0c7bc388/Netflix-Logo.jpg" alt="logo de Netflix">
+        src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="logo de Netflix">
         <header id="nav-home">
             <ul>
                 <li>Inicio</li>
+                <br>
                 <li>Series</li>
+                <br>
                 <li>Películas</li>
+                <br>
                 <li>Novedades Populares</li>
+                <br>
                 <li>Mi Lista</li>
+                <br>
                 <li>Explora por Idiomas</li>
             </ul>
         </header>
     </header>
+    
+    <header>
+       <header>
+        <h3> Tendencias</h3>
+       </header>
+    
+       <header id="seccion-tendencia">
+            <section>
+                <article>
+                    <div class="modulo">
+                    <img 
+                    height="80"
+                    id="img"
+                    src="https://media.gq.com.mx/photos/5cd71bf64dc0880f2d9adf10/16:9/w_1280,c_limit/Black%20Panther.jpg" 
+                    alt="peli1">
+                    </div>
+
+                </article>
+            </section>
+
+            <section>
+                <article>
+                   <div class="modulo">
+                    <img src="https://media.gq.com.mx/photos/5cd71bf64dc0880f2d9adf10/16:9/w_1280,c_limit/Black%20Panther.jpg" alt="peli1">
+                   </div>
+                </article>
+            </section>
+
+            <section>
+                <article>
+                    <div class="modulo">
+                        <img 
+                    height="50"
+                    src="https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/05eee581-3112-4515-b17f-219ff6265ef8/3f7210d0-47e8-11f0-b15c-121c7645ec99?host=wbd-images.prod-vod.h264.io&partner=beamcom&w=320" alt="peli3">
+                    </div>
+                </article>
+            </section>
+
+            <section>
+                <article>
+                    <div class="modulo">
+                        <img 
+                    height="50"
+                    src="https://es.web.img3.acsta.net/c_310_420/medias/nmedia/18/70/92/02/20149073.jpg" alt="peli4">
+                    </div>
+                </article>
+            </section>
+       </header>
+    </header>
+
+
+<header>
+       <header>
+        <h3>Las 10 peliculas mas populares hoy</h3>
+       </header>
+    
+       <header id="seccion-pop">
+            <section>
+                <article>
+                   <div class="modulo">
+                     <img 
+                    height="50"
+                    src="https://hips.hearstapps.com/hmg-prod/images/nosotros-1572084662.jpg?crop=0.9606147934678193xw:1xh;center,top&resize=980:*" alt="peli1">
+                   </div>
+                </article>
+            </section>
+
+            <section>
+                <article>
+                    <div class="modulo">
+                        <img 
+                    height="50"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNtXCdwzodPm7uFk981gXLfpXRkUUsstx82Q&s" alt="peli2">
+                    </div>
+                </article>
+            </section>
+
+            <section>
+                <article>
+                    <div class="modulo"><img 
+                    height="50"
+                    src="https://cdn.avpasion.com/wp-content/uploads/2025/01/las-mejores-peliculas-de-accion-ver-prime-video-04.jpg" alt="peli3"></div>
+                </article>
+            </section>
+
+            <section>
+                <article>
+                   <div class="modulo">
+                    <h6 style="">1</h6>
+                     <img 
+                    height="50"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ijGpiJS20bDHA9YNoEmEqf5fCPNOd07PNg&s" alt="peli4">
+                   </div>
+                </article>
+            </section>
+       </header>
+    </header>
+
 
 </body>
 </html>
